@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>THEA3135</title>
+    <link rel="stylesheet" href="" />
+
+  </head>
+  <body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Calendar.html">Calendar</a>
+        <a href="./form.html">form</a>
+        <a href="./Managementcon.html">Management contact</a>
+        <a href="./infosheet.html">Info Sheet</a>
+        <a href="./Protecteddocs.html">Protected doc</a>
+        <a href="./publicdoc.html">public doc</a>
+        <a href="./collab.html">collab</a>
+        <a href="./App.html">App</a>
+        <a href="./GraphicDesign.html">Graphic page</a>
+        <a href="./Marketing.html">Press Event</a>
+        <a href="./Photoedit.html">Edited Photo</a>
+    </nav>
+
+    <div class="container">
+      <p>Click on the "Choose File" button to upload a file:</p>
+
+    <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    <input type="submit">
+    <!-- <button onclick="disappear()">submit</button> -->
+    </form>
+
+    <h1 id="submission"></h1>
+
+    </div>
+
+  </body>
+</html>
+
+<script>
+function disappear(){
+document.getElementsByClassName("container").style.display="none";
+// $("#container").hide();
+document.getElementById("submission").innerHTML="Your file has been recieved";
+}
+
+</script>
+
+<style>
+
+  .container{
+  width: 100%;
+  text-align: center;
+  margin-top: 25%;
+}
+
+</style>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>THEA3135</title>
+    <link rel="stylesheet" href="" />
+
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./Calendar.html">Calendar</a>
+      <a href="./form.html">form</a>
+      <a href="./Managementcon.html">Management contact</a>
+      <a href="./infosheet.html">Info Sheet</a>
+      <a href="./Protecteddoc.html">Protected doc</a>
+      <a href="./publicdoc.html">public doc</a>
+      <a href="./collab.html">collab</a>
+      <a href="./App.html">App</a>
+      <a href="./GraphicDesign.html">Graphic page</a>
+      <a href="./Marketing.html">Press Event</a>
+      <a href="./Photoedit.html">Edited Photo</a>
+    </nav>
+
+    <div>
+      <button id="myBtn" onclick="myFunction()">Try it</button>
+    </div>
+
+    <p id="text1"></p>
+    <p id="text2"></p>
+
+  </body>
+</html>
+
+<script>
+
+  function myFunction(){
+
+    let password = prompt("Please enter the password")
+    var asterisks = (new Array(password.length+1).join("*"));
+
+    if(password==="Tahaasim"){
+    document.getElementById("text1").innerHTML="Taha - address: 1330 S Service Rd, Stoney Creek, ON L8E 5C5"
+    document.getElementById("text2").innerHTML="Ian Garret - address: 308 Negra Arroyo Lane, Albuquerque, New Mexico. 87104"
+    document.getElementById("myBtn").style.display = "none";
+    }
+    else{
+      alert("the password is incorrect. Please try again")
+    }
+  }
+
+</script>
