@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>THEA3135</title>
+    <link rel="stylesheet" href="" />
+
+  </head>
+  <body>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./Calendar.html">Calendar</a>
+      <a href="./form.html">form</a>
+      <a href="./Managementcon.html">Management contact</a>
+      <a href="./infosheet.html">Info Sheet</a>
+      <a href="./Protecteddocs.html">Protected doc</a>
+      <a href="./publicdoc.html">public doc</a>
+      <a href="./collab.html">collab</a>
+      <a href="./App.html">App</a>
+      <a href="./GraphicDesign.html">Graphic page</a>
+      <a href="./Marketing.html">Press Event</a>
+      <a href="./Photoedit.html">Edited Photo</a>
+      <a href="./PhotoManipulation.html">Manipulated Images</a>
+      <a href="./Desktoppublishing.html">Desktop Publishing</a>
+      <a href="./ShowProgramProject.html">Show Program Project</a>
+       <a href="./Presentation.html">Presentation</a>
+      <a href="./PresentationVid.html">Presentation Vid</a>
+    </nav>
+
+    <div>
+      <button id="myBtn" onclick="myFunction()">Try it</button>
+      <br><br>
+      <div id="myLink" style="display: none;">
+        <a href="file:///Users/tahaasim/Desktop/FBA/product+launch+timeline.pdf">Nonpublic file</a>
+     </div>
+
+    </div>
+
+  </body>
+</html>
+
+<script>
+
+function myFunction(){
+
+let password = prompt("Please enter the password")
+var asterisks = (new Array(password.length+1).join("*"));
+
+if(password==="Tahaasim"){
+document.getElementById("myBtn").style.display = "none";
+document.getElementById("myLink").style.display="block";
+
+}
+else{
+  alert("the password is incorrect. Please try again")
+}
+}
+
+</script> 
